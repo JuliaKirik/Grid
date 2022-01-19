@@ -39,8 +39,23 @@ img {
 .end {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 50px;
 }
 h1 {
     display: block;
+}
+.toho {
+    text-decoration: none;
+}
+.toho:hover {
+    text-decoration: underline;
+}
+.card a {
+    transition: 1s;
+}
+.card:hover a{
+    background-color: grey; 
+}
+.card:hover .card-text {
+    text-decoration: underline;
 }
