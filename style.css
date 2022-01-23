@@ -8,9 +8,10 @@
     gap: 10px;
     margin-bottom: 50px;
 }
-.container {
+body.container {
     padding: 0;
 }
+
 body{
     background-color: rgb(237, 237, 238);
 }
@@ -45,7 +46,14 @@ img {
     display: grid;
     grid-template-columns: 1fr;
 }
-
+.forfun {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    white-space: nowrap;
+}
+#service {
+    white-space: normal;
+}
 @media (min-width:768px) {
     #top {
         grid-template-columns: 1fr 1fr 1fr;
@@ -56,6 +64,11 @@ img {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 50px;
     }
+    .forfun {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+
 }
 
 h1 {
