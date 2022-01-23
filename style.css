@@ -1,10 +1,15 @@
 #top {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "navmoon navmoon navmoon"
-                         "hanbags watch shoes";
+    grid-template-columns: 1fr;
+    grid-template-areas: "navmoon"
+                        "hanbags"
+                        "watch"
+                        "shoes";
     gap: 10px;
     margin-bottom: 50px;
+}
+.container {
+    padding: 0;
 }
 body{
     background-color: rgb(237, 237, 238);
@@ -38,9 +43,21 @@ img {
 
 .end {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 50px;
+    grid-template-columns: 1fr;
 }
+
+@media (min-width:768px) {
+    #top {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "navmoon navmoon navmoon"
+                            "hanbags watch shoes";
+    }
+    .end {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 50px;
+    }
+}
+
 h1 {
     display: block;
 }
